@@ -1,0 +1,18 @@
+# Whitelist: ignore everything, then allow only what the repo should contain.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/biomedical_ner.ipynb
+!/dataset/
+!/assets/
+!/docs/
+
+# Never commit secrets, envs, weights or embeddings even if moved into allowed folders
+.env*
+*.pth
+*.bin
+*.safetensors
+*.vec
+*.zip
+.ipynb_checkpoints/
